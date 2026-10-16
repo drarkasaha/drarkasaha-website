@@ -1,224 +1,242 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Dr. Arka Saha — dental surgeon with a focus on periodontics, gum health and dental implants in Krishnanagar, West Bengal. Contact the clinic for appointment enquiries.">
-  <meta name="theme-color" content="#102d4f">
-  <title>Dr. Arka Saha | Periodontics & Dental Implants</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#102f50">
+  <meta name="description" content="Multispeciality Dental Clinic in Krishnanagar, West Bengal. Gum disease care, dental implant treatment planning, and comprehensive general dentistry with Dr. Arka Saha.">
+  <title>Dr. Arka Saha | Gum Care, Dental Implants & General Dentistry</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
   <style>
-    :root{--navy:#102d4f;--navy2:#183f68;--blue:#dceaf5;--ink:#203247;--muted:#63758a;--paper:#f7fafc;--white:#fff;--line:#e2eaf1;--gold:#c6a66b}
-    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,Arial,Helvetica,sans-serif;color:var(--ink);line-height:1.65;background:#fff}
-    a{color:inherit} .wrap{width:min(1120px,92%);margin:auto}
-    .topbar{background:var(--navy);color:#eaf3fb;font-size:.88rem;padding:8px 0}.topbar .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
-    header{position:sticky;top:0;background:rgba(255,255,255,.96);backdrop-filter:blur(10px);z-index:10;border-bottom:1px solid var(--line)}
-    nav{min-height:76px;display:flex;align-items:center;justify-content:space-between;gap:20px}
-    .brand{display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--navy);font-weight:800;line-height:1.2}
-    .brandmark{height:42px;width:42px;border:2px solid var(--gold);border-radius:50%;display:grid;place-items:center;font-family:Georgia,serif;font-size:20px;color:var(--navy)}
-    .brand small{display:block;font-weight:500;font-size:.73rem;color:var(--muted);margin-top:4px}
-    .navlinks{display:flex;align-items:center;gap:22px}.navlinks a{text-decoration:none;font-size:.92rem;font-weight:650}.navlinks a:hover{color:#3977a7}
-    .btn{display:inline-flex;justify-content:center;align-items:center;padding:12px 19px;border-radius:8px;background:var(--navy);color:white;text-decoration:none;font-weight:700;border:1px solid var(--navy);transition:.2s}
-    .btn:hover{background:var(--navy2)}.btn.outline{background:transparent;color:var(--navy)}.btn.outline:hover{background:var(--blue)}
-    .hero{background:linear-gradient(120deg,#f4f8fc 0%,#fff 55%,#e8f1f8 100%);padding:78px 0 74px;overflow:hidden}
-    .hero-grid{display:grid;grid-template-columns:1.1fr .9fr;align-items:center;gap:52px}
-    .eyebrow{display:inline-block;color:var(--navy2);background:#e5eef6;border-radius:99px;padding:7px 13px;font-size:.82rem;font-weight:750;letter-spacing:.04em;text-transform:uppercase}
-    h1{font-family:Georgia,'Times New Roman',serif;color:var(--navy);font-size:clamp(2.6rem,5vw,4.6rem);line-height:1.06;letter-spacing:-.035em;margin:20px 0}
-    h1 span{color:#477da5} .hero p{font-size:1.1rem;color:#53677c;max-width:590px}
-    .hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin:27px 0 22px}
-    .trustline{font-size:.91rem;color:var(--muted)}
-    .visual{min-height:420px;border-radius:26px;background:linear-gradient(145deg,#dceaf5,#f8fbfd);position:relative;display:flex;align-items:center;justify-content:center;padding:30px;overflow:hidden}
-    .visual:before,.visual:after{content:"";position:absolute;border:1px solid rgba(16,45,79,.14);border-radius:50%;width:340px;height:340px}
-    .visual:after{width:260px;height:260px}
-    .tooth{position:relative;z-index:1;width:210px;height:250px;filter:drop-shadow(0 20px 20px rgba(16,45,79,.12))}
-    .visual-note{position:absolute;z-index:2;bottom:22px;left:22px;right:22px;background:rgba(255,255,255,.92);padding:16px 18px;border-radius:13px;border:1px solid #fff;box-shadow:0 8px 28px rgba(16,45,79,.08)}
-    .visual-note strong{display:block;color:var(--navy)}.visual-note span{font-size:.9rem;color:var(--muted)}
-    .profile-visual{
-  background:#fff;
-  border:1px solid var(--line);
-  overflow:hidden;
-  padding:12px;
-  display:flex;
-  flex-direction:column;
-  gap:12px;
-}
-.profile-photo{
-  display:block;
-  width:100%;
-  height:360px;
-  object-fit:cover;
-  object-position:center 25%;
-  border-radius:18px;
-}
-    .profile-visual::before,
-.profile-visual::after {
-  display: none;
-}
-
-.profile-photo {
-  object-fit: cover;
-  width: 100%;
-  height: 360px;
-}
-    section{padding:76px 0}.section-head{text-align:center;max-width:700px;margin:0 auto 38px}.section-head .eyebrow{margin-bottom:10px}
-    h2{font-family:Georgia,'Times New Roman',serif;font-size:clamp(2rem,3.3vw,3rem);line-height:1.15;color:var(--navy);margin:8px 0 14px}
-    .section-head p{color:var(--muted);margin:0}
-    .about-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:48px;align-items:center}
-    .monogram-card{min-height:300px;border-radius:20px;background:var(--navy);color:#fff;display:grid;place-items:center;text-align:center;padding:30px;position:relative;overflow:hidden}
-    .monogram-card:before{content:"";position:absolute;width:260px;height:260px;border:1px solid rgba(255,255,255,.16);border-radius:50%}
-    .monogram-card div{position:relative}.monogram-card .big{font:84px Georgia,serif;color:#fff}.monogram-card p{color:#d9e6f2;margin:0}
-    .about-copy p{color:var(--muted)}.credentials{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-top:22px}
-    .credential{border:1px solid var(--line);border-radius:12px;padding:14px;background:#fbfdff}.credential strong{display:block;color:var(--navy);font-size:.94rem}.credential span{font-size:.84rem;color:var(--muted)}
-    .services{background:var(--paper)}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
-    .card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:25px;box-shadow:0 8px 26px rgba(16,45,79,.035)}
-    .icon{width:48px;height:48px;border-radius:13px;background:#e8f1f8;display:grid;place-items:center;color:var(--navy);font-size:24px;margin-bottom:18px}
-    .card h3{color:var(--navy);margin:0 0 9px;font-size:1.12rem}.card p{margin:0;color:var(--muted);font-size:.95rem}
-    .clinic-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}
-    .clinic-panel{background:#f0f6fa;border-radius:20px;padding:30px;border:1px solid var(--line)}
-    .detail{display:flex;gap:13px;margin:18px 0}.detail b{display:block;color:var(--navy)}.detail span{color:var(--muted);font-size:.95rem}
-    .contact{background:var(--navy);color:#fff}.contact h2{color:#fff}.contact .section-head p{color:#d1dfec}
-    .contact-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:35px;align-items:start}
-    .contact-box{background:#fff;color:var(--ink);border-radius:16px;padding:25px}
-    .contact-box label{display:block;font-weight:700;color:var(--navy);font-size:.9rem;margin:12px 0 5px}
-    .contact-box input,.contact-box select,.contact-box textarea{width:100%;padding:12px;border:1px solid #d7e1e9;border-radius:8px;font:inherit;background:#fff}
-    .contact-box textarea{min-height:95px;resize:vertical}.contact-box button{width:100%;margin-top:16px;cursor:pointer;font:inherit}
-    .contact-info p{color:#d1dfec}.contact-info .detail b{color:white}.contact-info .detail span{color:#d1dfec}
-    footer{background:#0a2038;color:#c9d7e5;padding:24px 0;font-size:.86rem}.footer-row{display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap}
-    .disclaimer{font-size:.82rem;color:var(--muted);margin-top:24px;border-top:1px solid var(--line);padding-top:15px}
-    .mobile-menu{display:none}
-    @media(max-width:800px){.hero-grid,.about-grid,.clinic-grid,.contact-grid{grid-template-columns:1fr}.hero{padding:52px 0}.visual{min-height:350px}.cards{grid-template-columns:repeat(2,1fr)}.navlinks{gap:12px}.navlinks a:not(.btn){display:none}}
-    @media(max-width:540px){section{padding:56px 0}.cards,.credentials{grid-template-columns:1fr}.navlinks .btn{padding:9px 12px;font-size:.85rem}.brand{font-size:.9rem}.brandmark{height:37px;width:37px}.topbar .wrap{font-size:.78rem}.visual{min-height:320px}.hero-actions .btn{width:100%}}
+    :root{--navy:#102f50;--blue:#176b9b;--green:#4c9a42;--ink:#25384a;--muted:#667687;--line:#e4ebef;--paper:#fff;--soft:#f5f9fb;--gold:#c5a56a;--radius:22px;--shadow:0 18px 48px rgba(16,47,80,.09)}
+    *{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:90px}body{margin:0;color:var(--ink);background:var(--paper);font-family:"DM Sans",Arial,sans-serif;line-height:1.65}a{color:inherit;text-decoration:none}img{max-width:100%;display:block}.container{width:min(1160px,calc(100% - 40px));margin:auto}.eyebrow{display:inline-flex;align-items:center;gap:10px;color:var(--green);font-weight:700;font-size:.76rem;letter-spacing:.15em;text-transform:uppercase}.eyebrow:before{content:"";width:28px;height:2px;background:var(--green)}h1,h2,h3{margin:0;color:var(--navy);line-height:1.15}h1,h2{font-family:"Playfair Display",Georgia,serif;font-weight:600}h1{font-size:clamp(2.7rem,5.6vw,5rem);letter-spacing:-.035em}h2{font-size:clamp(2rem,3.6vw,3.15rem);letter-spacing:-.025em}h3{font-size:1.16rem}p{margin:0 0 1rem}.section{padding:92px 0}.section-head{max-width:690px;margin-bottom:36px}.section-head p{margin-top:16px;color:var(--muted);font-size:1.05rem}.topbar{background:var(--navy);color:#fff;font-size:.82rem}.topbar-inner{display:flex;justify-content:space-between;gap:20px;padding:9px 0;align-items:center}.topbar span{opacity:.9}.topbar a{font-weight:700}.header{position:sticky;top:0;z-index:10;background:rgba(255,255,255,.96);backdrop-filter:blur(12px);border-bottom:1px solid rgba(228,235,239,.85)}.nav{min-height:82px;display:flex;align-items:center;justify-content:space-between;gap:24px}.brand{display:flex;align-items:center;gap:13px;min-width:0}.brand img{width:62px;height:62px;object-fit:contain}.brand-name{font-weight:700;color:var(--navy);line-height:1.25}.brand-name small{display:block;color:var(--muted);font-size:.73rem;font-weight:500;margin-top:4px}.nav-links{display:flex;align-items:center;gap:23px;font-size:.9rem;font-weight:600}.nav-links a:not(.btn):hover{color:var(--green)}.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;padding:13px 20px;border-radius:999px;font-size:.9rem;font-weight:700;transition:.2s ease;border:1px solid transparent}.btn-primary{background:var(--navy);color:#fff;box-shadow:0 8px 20px rgba(16,47,80,.15)}.btn-primary:hover{background:#19476f;transform:translateY(-1px)}.btn-outline{border-color:#cbd8df;color:var(--navy);background:#fff}.btn-outline:hover{border-color:var(--green);color:var(--green)}.menu-toggle{display:none;border:1px solid var(--line);background:#fff;border-radius:12px;padding:10px;color:var(--navy);font-size:1.2rem}
+    .hero{position:relative;overflow:hidden;padding:70px 0 76px;background:radial-gradient(circle at 78% 26%,rgba(76,154,66,.10),transparent 28%),linear-gradient(120deg,#f8fbfc 0%,#fff 54%,#f1f8fa 100%)}.hero-grid{display:grid;grid-template-columns:1.12fr .88fr;align-items:center;gap:58px}.hero-copy .eyebrow{margin-bottom:22px}.hero h1 span{color:var(--blue)}.hero-copy>p{font-size:1.08rem;color:var(--muted);max-width:600px;margin:24px 0 28px}.hero-actions{display:flex;flex-wrap:wrap;gap:12px}.hero-note{display:flex;align-items:center;gap:12px;margin-top:27px;color:var(--muted);font-size:.88rem}.note-dot{width:10px;height:10px;border-radius:50%;background:var(--green);box-shadow:0 0 0 5px rgba(76,154,66,.12);flex:none}.hero-photo-wrap{position:relative;max-width:460px;margin-left:auto}.hero-photo-wrap:before{content:"";position:absolute;inset:18px -18px -18px 18px;border:1px solid rgba(76,154,66,.4);border-radius:30px}.hero-photo{position:relative;width:100%;aspect-ratio:4/4.7;object-fit:cover;object-position:center 28%;border-radius:28px;box-shadow:var(--shadow);background:#eaf0f3}.photo-caption{position:absolute;left:-24px;bottom:24px;background:#fff;padding:17px 20px;border-radius:16px;box-shadow:var(--shadow);max-width:245px}.photo-caption strong{display:block;color:var(--navy);font-size:.95rem}.photo-caption small{display:block;color:var(--muted);font-size:.78rem;margin-top:3px}.trust-strip{border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:#fff}.trust-grid{display:grid;grid-template-columns:repeat(3,1fr)}.trust-item{padding:23px 24px;display:flex;align-items:center;gap:13px;border-right:1px solid var(--line)}.trust-item:last-child{border-right:0}.trust-icon{width:40px;height:40px;display:grid;place-items:center;border-radius:13px;background:#eef7ed;color:var(--green);font-size:1.1rem;font-weight:700;flex:none}.trust-item strong{display:block;color:var(--navy);font-size:.92rem}.trust-item small{display:block;color:var(--muted);font-size:.78rem}
+    .about-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:70px;align-items:center}.about-card{background:var(--soft);padding:28px;border-radius:var(--radius);border:1px solid var(--line)}.about-card img{width:100%;aspect-ratio:4/3;object-fit:cover;object-position:center 25%;border-radius:16px}.about-card .card-caption{padding:18px 4px 0}.card-caption strong{color:var(--navy);display:block}.card-caption span{font-size:.86rem;color:var(--muted)}.about-copy .eyebrow{margin-bottom:18px}.about-copy p{color:var(--muted);margin-top:18px}.credential-list{display:grid;gap:13px;margin-top:24px}.credential{display:flex;gap:13px;align-items:flex-start}.check{color:var(--green);font-weight:700;font-size:1.05rem}.credential strong{display:block;color:var(--navy);font-size:.94rem}.credential small{display:block;color:var(--muted);font-size:.84rem}
+    .services{background:var(--soft)}.services-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.service-card{background:#fff;border:1px solid var(--line);border-radius:20px;padding:28px;box-shadow:0 4px 18px rgba(16,47,80,.025);transition:.2s ease}.service-card:hover{transform:translateY(-4px);box-shadow:var(--shadow);border-color:#c8dfc5}.service-number{width:48px;height:48px;display:grid;place-items:center;border-radius:15px;background:#eef7ed;color:var(--green);font-weight:700;margin-bottom:22px}.service-card p{color:var(--muted);font-size:.93rem;margin:12px 0 17px}.service-card ul{padding-left:18px;margin:0;color:var(--muted);font-size:.88rem}.service-card li{margin:6px 0}.service-card.featured{border-color:rgba(76,154,66,.48);position:relative}.service-card.featured:after{content:"CORE FOCUS";position:absolute;right:18px;top:18px;font-size:.62rem;letter-spacing:.1em;color:var(--green);font-weight:700}
+    .approach-grid{display:grid;grid-template-columns:1fr 1fr;gap:54px;align-items:center}.approach-panel{background:var(--navy);color:#fff;border-radius:26px;padding:38px}.approach-panel h2{color:#fff}.approach-panel p{color:rgba(255,255,255,.76);margin:18px 0 0}.approach-points{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:26px}.approach-point{border-top:1px solid rgba(255,255,255,.22);padding-top:15px}.approach-point strong{display:block;color:#fff;font-size:.95rem}.approach-point span{color:rgba(255,255,255,.68);font-size:.82rem}.approach-copy p{color:var(--muted);margin-top:18px}.approach-list{display:grid;gap:14px;margin-top:22px}.approach-list div{display:flex;gap:12px;align-items:flex-start}.approach-list b{color:var(--navy);font-size:.93rem}.approach-list span{display:block;color:var(--muted);font-size:.85rem}
+    .education{background:#f7fafb}.education-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.education-card{border:1px solid var(--line);background:#fff;border-radius:18px;padding:24px}.education-card .mini{font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;color:var(--green);font-weight:700}.education-card h3{margin:10px 0}.education-card p{font-size:.9rem;color:var(--muted);margin-bottom:0}
+    .clinic-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:stretch}.clinic-info{padding:14px 0}.clinic-info p{color:var(--muted);margin-top:15px}.info-list{display:grid;gap:17px;margin-top:25px}.info-row{display:flex;gap:14px;align-items:flex-start}.info-symbol{width:40px;height:40px;border-radius:13px;background:#eef7ed;color:var(--green);display:grid;place-items:center;font-weight:700;flex:none}.info-row strong{display:block;color:var(--navy);font-size:.93rem}.info-row span,.info-row a{color:var(--muted);font-size:.88rem;overflow-wrap:anywhere}.clinic-map{min-height:320px;border-radius:24px;border:1px solid var(--line);background:linear-gradient(145deg,#eef6f7,#f9fbfc);display:flex;align-items:center;justify-content:center;text-align:center;padding:30px}.map-placeholder{max-width:320px}.map-placeholder .map-icon{font-size:2.3rem;color:var(--green);margin-bottom:10px}.map-placeholder h3{margin-bottom:8px}.map-placeholder p{color:var(--muted);font-size:.9rem}.map-placeholder small{color:#8795a0}
+    .cta-band{background:linear-gradient(110deg,#edf7ec,#f4f9fb);padding:44px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}.cta-inner{display:flex;justify-content:space-between;align-items:center;gap:28px}.cta-inner p{color:var(--muted);margin:10px 0 0;max-width:640px}.footer{background:#0b243d;color:#fff;padding:48px 0 22px}.footer-top{display:flex;justify-content:space-between;gap:40px;padding-bottom:30px}.footer-brand{max-width:430px}.footer-brand img{width:84px;height:84px;object-fit:contain;background:#fff;border-radius:16px;margin-bottom:14px}.footer-brand p{color:rgba(255,255,255,.68);font-size:.9rem;margin-top:10px}.footer-links{display:flex;gap:50px}.footer-links strong{display:block;margin-bottom:12px}.footer-links a{display:block;color:rgba(255,255,255,.7);font-size:.86rem;margin:7px 0}.footer-bottom{border-top:1px solid rgba(255,255,255,.16);padding-top:18px;display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap;color:rgba(255,255,255,.55);font-size:.78rem}.disclaimer{font-size:.76rem;color:rgba(255,255,255,.58);max-width:800px;margin-top:12px}
+    @media(max-width:950px){.nav-links{gap:13px;font-size:.82rem}.nav-links .btn{padding:10px 14px}.hero-grid{gap:35px}.about-grid{gap:40px}.service-card{padding:23px}.approach-grid{gap:30px}}
+    @media(max-width:760px){.container{width:min(100% - 32px,600px)}.section{padding:66px 0}.topbar-inner{justify-content:center;text-align:center}.topbar-inner span:first-child{display:none}.nav{min-height:72px}.brand img{width:52px;height:52px}.brand-name{font-size:.92rem}.brand-name small{font-size:.67rem}.menu-toggle{display:block}.nav-links{display:none;position:absolute;top:72px;left:0;right:0;padding:18px 22px 24px;background:#fff;border-bottom:1px solid var(--line);box-shadow:0 14px 22px rgba(16,47,80,.08);align-items:stretch;flex-direction:column;gap:16px}.nav-links.open{display:flex}.nav-links .btn{align-self:flex-start}.hero{padding:48px 0 54px}.hero-grid{grid-template-columns:1fr;gap:40px}.hero-copy>p{font-size:1rem}.hero-photo-wrap{width:min(84%,390px);margin:0 auto 12px}.photo-caption{left:-14px;bottom:18px}.trust-grid{grid-template-columns:1fr}.trust-item{border-right:0;border-bottom:1px solid var(--line);padding:16px 4px}.trust-item:last-child{border-bottom:0}.about-grid,.approach-grid,.clinic-grid{grid-template-columns:1fr;gap:30px}.about-card{max-width:420px;margin:auto}.services-grid,.education-grid{grid-template-columns:1fr}.service-card{padding:26px}.approach-panel{padding:28px}.approach-points{gap:14px}.cta-inner{align-items:flex-start;flex-direction:column}.footer-top{flex-direction:column}.footer-links{gap:40px}.footer-bottom{flex-direction:column}.clinic-map{min-height:250px}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important}}
   </style>
 </head>
 <body>
-  <div class="topbar"><div class="wrap"><span>Periodontics · Oral Implantology · General Dental Care</span><span>Krishnanagar, Nadia, West Bengal</span></div></div>
-  <header>
-    <nav class="wrap" aria-label="Main navigation">
-      <a class="brand" href="#home"><span class="brandmark">AS</span><span>Dr. Arka Saha<small>Dental Care & Implantology</small></span></a>
-      <div class="navlinks">
-        <a href="#about">About</a><a href="#treatments">Treatments</a><a href="#clinic">Clinic</a>
-        <a class="btn" href="#contact">Appointment enquiry</a>
-      </div>
-    </nav>
+  <!--
+    QUICK CUSTOMISATION:
+    Clinic contact details are configured below. The map link opens a location search until the exact clinic pin is supplied.
+    Keep the qualification wording accurate: MDS is currently in progress (2024–2027 batch).
+  -->
+  <div class="topbar">
+    <div class="container topbar-inner">
+      <span>Multispeciality Dental Clinic · Krishnanagar, Nadia</span>
+      <a href="#contact">Appointments & clinic information <span aria-hidden="true">↗</span></a>
+    </div>
+  </div>
+  <header class="header">
+    <div class="container nav">
+      <a class="brand" href="#home" aria-label="Dr. Arka Saha home">
+        <img src="assets/clinic-logo.png" alt="Multispeciality Dental Clinic logo">
+        <span class="brand-name">Dr. Arka Saha<small>Periodontal Care · Implants · Dentistry</small></span>
+      </a>
+      <button class="menu-toggle" aria-label="Open navigation menu" aria-expanded="false" id="menuToggle">☰</button>
+      <nav class="nav-links" id="navLinks" aria-label="Main navigation">
+        <a href="#about">About</a><a href="#services">Treatments</a><a href="#approach">Our Approach</a><a href="#clinic">Clinic</a><a href="#contact" class="btn btn-primary">Contact the Clinic ↗</a>
+      </nav>
+    </div>
   </header>
 
   <main>
     <section class="hero" id="home">
-      <div class="wrap hero-grid">
-        <div>
-          <span class="eyebrow">Personal care. Healthy smiles.</span>
-          <h1>Healthy gums.<br><span>Confident smiles.</span></h1>
-          <p>Meet Dr. Arka Saha for patient-focused dental care with a special interest in gum health, periodontics and dental implant treatment in Krishnanagar.</p>
-          <div class="hero-actions"><a class="btn" href="#contact">Enquire about an appointment →</a><a class="btn outline" href="#treatments">Explore treatments</a></div>
-          <div class="trustline">Clear explanations · Thoughtful treatment planning · Individualised care</div>
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <span class="eyebrow">Multispeciality Dental Clinic · Krishnanagar</span>
+          <h1>Healthy foundations.<br><span>Confident smiles.</span></h1>
+          <p>Focused care for gum health and dental implants, alongside general dentistry and comprehensive oral healthcare — with treatment planned around your needs, comfort, and long-term wellbeing.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#contact">Enquire about an appointment <span aria-hidden="true">→</span></a>
+            <a class="btn btn-outline" href="#services">Explore treatments</a>
+          </div>
+          <div class="hero-note"><span class="note-dot"></span><span>Serving Krishnanagar and neighbouring communities.</span></div>
         </div>
-        <div class="visual profile-visual">
-  <img
-    src="arka-saha-profile.jpg"
-    alt="Dr. Arka Saha, Periodontics and Oral Implantology"
-    class="profile-photo"
-  >
-  <div class="visual-note">
-    <strong>Dr. Arka Saha</strong>
-    <span>Periodontics &amp; Oral Implantology · Krishnanagar</span>
-  </div>
-</div>
+        <div class="hero-photo-wrap">
+          <img class="hero-photo" src="assets/arka-saha-profile.jpg" alt="Dr. Arka Saha, dental surgeon" fetchpriority="high">
+          <div class="photo-caption"><strong>Dr. Arka Saha</strong><small>Dental Surgeon · MDS training in Periodontology & Oral Implantology</small></div>
+        </div>
       </div>
     </section>
 
-    <section id="about">
-      <div class="wrap about-grid">
-        <div class="monogram-card"><div><div class="big">AS</div><p>Care grounded in knowledge<br>and a patient-first approach</p></div></div>
+    <section class="trust-strip" aria-label="Clinic focus">
+      <div class="container trust-grid">
+        <div class="trust-item"><span class="trust-icon">01</span><div><strong>Gum Disease Management</strong><small>Periodontal health and maintenance</small></div></div>
+        <div class="trust-item"><span class="trust-icon">02</span><div><strong>Dental Implant Dentistry</strong><small>Assessment and treatment planning</small></div></div>
+        <div class="trust-item"><span class="trust-icon">03</span><div><strong>Comprehensive Dental Care</strong><small>General dentistry and oral health</small></div></div>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="container about-grid">
+        <div class="about-card">
+          <img src="assets/arka-saha-profile.jpg" alt="Portrait of Dr. Arka Saha" loading="lazy">
+          <div class="card-caption"><strong>Dr. Arka Saha</strong><span>Dental Surgeon · Krishnanagar, West Bengal</span></div>
+        </div>
         <div class="about-copy">
-          <span class="eyebrow">About the doctor</span>
-          <h2>Meet Dr. Arka Saha</h2>
-          <p>Dr. Arka Saha is a dental surgeon with clinical experience in general dentistry and a focused interest in periodontics and oral implantology. He completed his BDS at Haldia Institute of Dental Sciences and Research and has worked as a house surgeon at Balurghat District Hospital.</p>
-          <p>He has been practising in Krishnanagar since 2021 and is pursuing MDS training in Periodontics and Oral Implantology at K.S.D. Jain Dental College & Hospital, Kolkata.</p>
-          <div class="credentials">
-            <div class="credential"><strong>BDS</strong><span>Haldia Institute of Dental Sciences and Research</span></div>
-            <div class="credential"><strong>MDS training</strong><span>Periodontics & Oral Implantology</span></div>
-            <div class="credential"><strong>Clinical experience</strong><span>General dental practice since 2021</span></div>
-            <div class="credential"><strong>Special interest</strong><span>Gum health and dental implants</span></div>
+          <span class="eyebrow">Meet your dentist</span>
+          <h2>A local connection.<br>A commitment to oral health.</h2>
+          <p>Born and raised in Krishnanagar, Dr. Arka Saha is a dental surgeon with a focused professional interest in periodontal disease management and dental implant dentistry, alongside general dentistry and comprehensive oral healthcare.</p>
+          <p>He completed his BDS at Haldia Institute of Dental Sciences and Research (2015–2020), followed by service as a House Surgeon at Balurghat District Hospital, Dakshin Dinajpur (2020–2021). He is currently pursuing his MDS in Periodontology and Oral Implantology at Kusum Devi Sunderlal Dugar Jain Dental College and Hospital, Kolkata (2024–2027 batch).</p>
+          <div class="credential-list">
+            <div class="credential"><span class="check">✓</span><div><strong>BDS — Haldia Institute of Dental Sciences and Research</strong><small>2015–2020</small></div></div>
+            <div class="credential"><span class="check">✓</span><div><strong>House Surgeon — Balurghat District Hospital</strong><small>Dakshin Dinajpur · 2020–2021</small></div></div>
+            <div class="credential"><span class="check">✓</span><div><strong>MDS training — Periodontology and Oral Implantology</strong><small>Kusum Devi Sunderlal Dugar Jain Dental College and Hospital, Kolkata · 2024–2027 batch</small></div></div>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="services" id="treatments">
-      <div class="wrap">
-        <div class="section-head"><span class="eyebrow">Dental services</span><h2>Care for every stage of your smile</h2><p>Explore common treatment areas. The right option depends on an individual clinical examination and diagnosis.</p></div>
-        <div class="cards">
-          <article class="card"><div class="icon">✧</div><h3>Gum disease care</h3><p>Assessment and management of gum inflammation, bleeding gums, periodontal pockets and supporting-tissue problems.</p></article>
-          <article class="card"><div class="icon">◉</div><h3>Dental implants</h3><p>Consultation and treatment planning for tooth replacement with dental implants, when clinically appropriate.</p></article>
-          <article class="card"><div class="icon">⌁</div><h3>Scaling & root planing</h3><p>Professional removal of plaque and calculus, with periodontal maintenance advice tailored to your needs.</p></article>
-          <article class="card"><div class="icon">＋</div><h3>General dentistry</h3><p>Routine dental assessment, preventive advice and care for common dental concerns.</p></article>
-          <article class="card"><div class="icon">◇</div><h3>Gum recession consultation</h3><p>Evaluation of receding gums, sensitivity and possible treatment options based on the cause and clinical findings.</p></article>
-          <article class="card"><div class="icon">♡</div><h3>Preventive dental care</h3><p>Oral hygiene guidance and personalised recommendations to support long-term oral health.</p></article>
+    <section class="section services" id="services">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Treatments & care</span>
+          <h2>Care for gums, teeth, and your whole smile.</h2>
+          <p>From gum health and implant assessment to everyday dental needs, treatment recommendations are based on clinical examination, diagnosis, and individual goals.</p>
         </div>
-        <p class="disclaimer">Treatment availability and suitability are confirmed after clinical evaluation. No treatment outcome can be guaranteed.</p>
+        <div class="services-grid">
+          <article class="service-card featured">
+            <div class="service-number">01</div><h3>Gum Disease Management</h3>
+            <p>Care focused on the health of the gums and supporting tissues of the teeth.</p>
+            <ul><li>Gum assessment and periodontal diagnosis</li><li>Scaling and root surface debridement, when indicated</li><li>Periodontal maintenance and oral hygiene guidance</li><li>Assessment of gum recession and tooth mobility</li></ul>
+          </article>
+          <article class="service-card featured">
+            <div class="service-number">02</div><h3>Dental Implants</h3>
+            <p>Individual assessment and planning for replacing missing teeth with implant-supported options.</p>
+            <ul><li>Implant suitability assessment</li><li>Review of bone and gum conditions</li><li>Implant treatment planning and referral coordination where appropriate</li><li>Maintenance advice for implant health</li></ul>
+          </article>
+          <article class="service-card">
+            <div class="service-number">03</div><h3>General Dentistry</h3>
+            <p>Essential dental care to help prevent, diagnose, and manage common oral health problems.</p>
+            <ul><li>Routine dental examination</li><li>Preventive care and oral hygiene counselling</li><li>Assessment of tooth pain and dental concerns</li><li>Restorative care and treatment coordination</li></ul>
+          </article>
+          <article class="service-card">
+            <div class="service-number">04</div><h3>Comprehensive Oral Health</h3>
+            <p>A broader view of oral health, considering teeth, gums, function, habits, and maintenance.</p>
+            <ul><li>Personalised treatment planning</li><li>Prevention and risk-factor discussion</li><li>Follow-up and long-term maintenance</li><li>Guidance on when specialist care is needed</li></ul>
+          </article>
+          <article class="service-card">
+            <div class="service-number">05</div><h3>Tooth Replacement Planning</h3>
+            <p>Discuss suitable options for missing teeth based on oral health, needs, and clinical findings.</p>
+            <ul><li>Assessment of the site and surrounding tissues</li><li>Discussion of available treatment options</li><li>Planning that considers function and maintenance</li></ul>
+          </article>
+          <article class="service-card">
+            <div class="service-number">06</div><h3>Oral Health Advice</h3>
+            <p>Practical guidance to help patients understand their oral health and make informed decisions.</p>
+            <ul><li>Brushing and interdental cleaning guidance</li><li>Gum bleeding and bad breath assessment</li><li>Advice on regular reviews and maintenance</li></ul>
+          </article>
+        </div>
       </div>
     </section>
 
-    <section id="clinic">
-      <div class="wrap clinic-grid">
-        <div>
-          <span class="eyebrow">Visit the clinic</span><h2>Multispeciality Dental Clinic</h2>
-          <p>For dental consultations in Krishnanagar, contact the clinic to ask about availability, treatment options and appointment timings.</p>
-          <p>Bring previous dental records or X-rays if you have them. Please share any relevant medical history and current medications during your visit.</p>
-          <a class="btn" href="#contact">Contact the clinic</a>
-        </div>
-        <div class="clinic-panel">
-          <h3 style="color:var(--navy);margin-top:0">Clinic information</h3>
-          <div class="detail"><div>📍</div><div><b>Location</b><span>Krishnanagar, Nadia, West Bengal, India</span></div></div>
-          <div class="detail"><div>🦷</div><div><b>Clinical focus</b><span>Periodontics, oral implantology and general dental services</span></div></div>
-          <div class="detail"><div>📞</div><div><b>Appointments</b><span>Contact details can be added before publishing</span></div></div>
-          <div class="detail"><div>🕒</div><div><b>Hours</b><span>Please contact the clinic to confirm current timings</span></div></div>
-        </div>
-      </div>
-    </section>
-
-    <section class="contact" id="contact">
-      <div class="wrap">
-        <div class="section-head"><span class="eyebrow" style="background:#244969;color:#fff">Get in touch</span><h2>Appointment enquiry</h2><p>Send an enquiry and the clinic can follow up with you to discuss availability.</p></div>
-        <div class="contact-grid">
-          <div class="contact-info">
-            <h3>We're here to help you take the next step.</h3>
-            <p>Use the enquiry form to open a pre-filled WhatsApp message, or contact the clinic directly once the phone number has been added.</p>
-            <div class="detail"><div>📍</div><div><b>Clinic location</b><span>Krishnanagar, Nadia, West Bengal</span></div></div>
-            <div class="detail"><div>💬</div><div><b>WhatsApp</b><span>Set your clinic number in the website file before publishing.</span></div></div>
-            <div class="detail"><div>🗺️</div><div><b>Google Maps</b><span>Add your clinic's exact Maps link before publishing.</span></div></div>
+    <section class="section" id="approach">
+      <div class="container approach-grid">
+        <div class="approach-panel">
+          <span class="eyebrow" style="color:#b8df9c">Our care philosophy</span>
+          <h2>Healthy foundations.<br>Confident smiles.</h2>
+          <p>Good dentistry starts with understanding the person behind the symptoms. The aim is to help patients understand their options and take practical steps toward better oral health.</p>
+          <div class="approach-points">
+            <div class="approach-point"><strong>Listen first</strong><span>Understand your concerns and priorities.</span></div>
+            <div class="approach-point"><strong>Explain clearly</strong><span>Make diagnoses and options easier to understand.</span></div>
+            <div class="approach-point"><strong>Plan carefully</strong><span>Recommendations guided by clinical findings.</span></div>
+            <div class="approach-point"><strong>Maintain health</strong><span>Support prevention and follow-up care.</span></div>
           </div>
-          <form class="contact-box" id="enquiryForm">
-            <h3 style="margin:0;color:var(--navy)">Send an enquiry</h3>
-            <label for="name">Your name</label><input id="name" name="name" required placeholder="Enter your name">
-            <label for="phone">Your phone number</label><input id="phone" name="phone" required inputmode="tel" placeholder="Enter your number">
-            <label for="service">What would you like help with?</label>
-            <select id="service" name="service"><option>General dental consultation</option><option>Gum problems / bleeding gums</option><option>Dental implant consultation</option><option>Gum recession</option><option>Scaling and root planing</option><option>Other dental concern</option></select>
-            <label for="message">Additional details (optional)</label><textarea id="message" name="message" placeholder="Briefly describe your enquiry. Please don't include sensitive medical information."></textarea>
-            <button class="btn" type="submit">Continue to WhatsApp →</button>
-            <p style="font-size:.8rem;color:var(--muted);margin:12px 0 0">This form opens WhatsApp with your message. It does not book or confirm an appointment automatically.</p>
-          </form>
         </div>
+        <div class="approach-copy">
+          <span class="eyebrow">A thoughtful approach</span>
+          <h2>Care that looks beyond the immediate problem.</h2>
+          <p>Gum health, missing teeth, bite function, and everyday oral hygiene can all influence long-term dental wellbeing. A comprehensive assessment helps identify what needs attention now and what may help protect oral health over time.</p>
+          <div class="approach-list">
+            <div><span class="check">✓</span><div><b>Individualised assessment</b><span>Every treatment plan begins with an appropriate clinical evaluation.</span></div></div>
+            <div><span class="check">✓</span><div><b>Informed decisions</b><span>Patients should understand the purpose, alternatives, limitations, and maintenance needs of treatment.</span></div></div>
+            <div><span class="check">✓</span><div><b>Prevention and follow-up</b><span>Ongoing maintenance is an important part of periodontal and implant care.</span></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section education" id="education">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Patient education</span>
+          <h2>Know your oral health.</h2>
+          <p>Clear information can help you recognise common concerns and know when to seek a dental assessment.</p>
+        </div>
+        <div class="education-grid">
+          <article class="education-card"><span class="mini">Gum health</span><h3>Do your gums bleed?</h3><p>Bleeding gums can be a sign of inflammation. A dental assessment can help identify the cause and appropriate care.</p></article>
+          <article class="education-card"><span class="mini">Missing teeth</span><h3>Considering dental implants?</h3><p>Suitability depends on a careful assessment of oral health, bone, gums, medical history, and personal needs.</p></article>
+          <article class="education-card"><span class="mini">Prevention</span><h3>Small habits matter.</h3><p>Daily cleaning, a balanced approach to oral health, and regular dental reviews can help support long-term wellbeing.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="clinic">
+      <div class="container clinic-grid">
+        <div class="clinic-info">
+          <span class="eyebrow">Visit the clinic</span>
+          <h2>Local care in Krishnanagar.</h2>
+          <p>Multispeciality Dental Clinic provides general dental services with a particular focus on gum health and implant dentistry. Patients from Krishnanagar and neighbouring areas are welcome to enquire about an appointment.</p>
+          <div class="info-list">
+            <div class="info-row"><span class="info-symbol">⌖</span><div><strong>Clinic</strong><span>Multispeciality Dental Clinic</span></div></div>
+            <div class="info-row"><span class="info-symbol">⌂</span><div><strong>Location</strong><span>Raja Road, Krishnanagar, Nadia, West Bengal</span><br><a href="https://share.google/oIvVLQB9VNVD9pOHr" target="_blank" rel="noopener">View Google Business Profile ↗</a><br><a href="https://www.google.com/maps/search/?api=1&amp;query=Raja+Road%2C+Krishnanagar%2C+Nadia%2C+West+Bengal" target="_blank" rel="noopener">Search this location on Google Maps ↗</a></div></div>
+            <div class="info-row"><span class="info-symbol">☎</span><div><strong>Phone</strong><a href="tel:+919933101769">9933101769</a><br><strong style="margin-top:7px">WhatsApp appointments</strong><a href="https://wa.me/917679361885" target="_blank" rel="noopener">7679361885 · Message on WhatsApp ↗</a></div></div>
+            <div class="info-row"><span class="info-symbol">◷</span><div><strong>Clinic timings</strong><span>Monday–Friday: 7:00 PM–9:00 PM<br>Saturday: 6:00 PM–9:00 PM<br>Sunday: 9:00 AM–1:00 PM and 6:00 PM–9:00 PM</span></div></div>
+          </div>
+        </div>
+        <div class="clinic-map">
+          <div class="map-placeholder">
+            <div class="map-icon">⌖</div><h3>Find us in Krishnanagar</h3>
+            <p>View the clinic’s Google Business Profile or open a location search for Raja Road, Krishnanagar.</p>
+            <div class="hero-actions" style="justify-content:center"><a class="btn btn-primary" href="https://share.google/oIvVLQB9VNVD9pOHr" target="_blank" rel="noopener">Google Business Profile ↗</a><a class="btn btn-outline" href="https://www.google.com/maps/search/?api=1&amp;query=Raja+Road%2C+Krishnanagar%2C+Nadia%2C+West+Bengal" target="_blank" rel="noopener">Maps search ↗</a></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-band" id="contact">
+      <div class="container cta-inner">
+        <div><span class="eyebrow">Appointments & enquiries</span><h2>Let’s talk about your dental health.</h2><p>For gum concerns, dental implant enquiries, or general dental care, call the clinic or send a WhatsApp message to ask about appointment availability.</p><p style="margin-top:12px;color:var(--navy);font-weight:700">Phone: <a href="tel:+919933101769">9933101769</a> · WhatsApp: <a href="https://wa.me/917679361885" target="_blank" rel="noopener">7679361885</a></p></div>
+        <div class="hero-actions"><a class="btn btn-primary" href="tel:+919933101769">Call the clinic ↗</a><a class="btn btn-outline" href="https://wa.me/917679361885" target="_blank" rel="noopener">WhatsApp us ↗</a></div>
       </div>
     </section>
   </main>
-  <footer><div class="wrap footer-row"><span>© <span id="year"></span> Dr. Arka Saha · Multispeciality Dental Clinic</span><span>Periodontics & Oral Implantology · Krishnanagar</span></div></footer>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand"><img src="assets/clinic-logo.png" alt="Multispeciality Dental Clinic logo" loading="lazy"><h3 style="color:#fff">Multispeciality Dental Clinic</h3><p>Healthy Foundations. Confident Smiles.<br>Gum health, dental implants, general dentistry, and comprehensive oral healthcare in Krishnanagar.</p></div>
+        <div class="footer-links"><div><strong>Explore</strong><a href="#about">About Dr. Arka Saha</a><a href="#services">Treatments</a><a href="#approach">Our approach</a><a href="#education">Patient education</a></div><div><strong>Clinic</strong><a href="#clinic">Location & timings</a><a href="https://share.google/oIvVLQB9VNVD9pOHr" target="_blank" rel="noopener">Google Business Profile</a><a href="tel:+919933101769">Call: 9933101769</a><a href="https://wa.me/917679361885" target="_blank" rel="noopener">WhatsApp: 7679361885</a><a href="#contact">Appointments</a></div></div>
+      </div>
+      <div class="footer-bottom"><span>© <span id="year"></span> Multispeciality Dental Clinic. All rights reserved.</span><span>Designed for patient education and clinic information.</span></div>
+      <p class="disclaimer">Website information is general in nature and does not replace an individual clinical examination or professional advice. Treatment suitability and outcomes vary by patient.</p>
+    </div>
+  </footer>
   <script>
-    // IMPORTANT: Replace the placeholder with the clinic WhatsApp number, including country code, digits only.
-    const CLINIC_WHATSAPP_NUMBER = "917679361885";
-    document.getElementById("year").textContent = new Date().getFullYear();
-    document.getElementById("enquiryForm").addEventListener("submit", function(e) {
-      e.preventDefault();
-      if (CLINIC_WHATSAPP_NUMBER.includes("X")) {
-        alert("The website needs your clinic WhatsApp number before this form can work. Add it in index.html, then publish the site.");
-        return;
-      }
-      const name = document.getElementById("name").value.trim();
-      const phone = document.getElementById("phone").value.trim();
-      const service = document.getElementById("service").value;
-      const message = document.getElementById("message").value.trim();
-      const body = `Hello, I would like to enquire about an appointment.\\nName: ${name}\\nPhone: ${phone}\\nConcern: ${service}\\nAdditional details: ${message || "Not provided"}`;
-      window.open(`https://wa.me/${CLINIC_WHATSAPP_NUMBER}?text=${encodeURIComponent(body)}`, "_blank", "noopener");
+    const menuToggle = document.getElementById('menuToggle');
+    const navLinks = document.getElementById('navLinks');
+    menuToggle.addEventListener('click', () => {
+      const open = navLinks.classList.toggle('open');
+      menuToggle.setAttribute('aria-expanded', String(open));
+      menuToggle.setAttribute('aria-label', open ? 'Close navigation menu' : 'Open navigation menu');
+      menuToggle.textContent = open ? '✕' : '☰';
     });
+    navLinks.querySelectorAll('a').forEach(link => link.addEventListener('click', () => {
+      navLinks.classList.remove('open');
+      menuToggle.setAttribute('aria-expanded', 'false');
+      menuToggle.setAttribute('aria-label', 'Open navigation menu');
+      menuToggle.textContent = '☰';
+    }));
+    document.getElementById('year').textContent = new Date().getFullYear();
   </script>
 </body>
 </html>
